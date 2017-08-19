@@ -1,0 +1,44 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/Anghelo/Google Drive/" . "12 Algorithmics/")
+ ("c:/Users/Anghelo/" . "Google Drive/")
+ ("c:/Users/" . "Anghelo/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/Anghelo/Google Drive/12 Algorithmics/4.6/"
+ "c:/Users/Anghelo/Google Drive/12 Algorithmics/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "4.6_Worksheet.org"
+ "4.3"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/Anghelo/Google Drive/12 Algorithmics/" (22927 50211 0 0) "U3 Sat Test 3_Anghelo.pdf" "SAT TASK 1/" "notes.pdf" "Lesson Slides/" "4.6.org" "4.6/" "4.1/" "../" "./")
+
+ ("c:/Users/Anghelo/Google Drive/12 Algorithmics/4.6/" (22927 50211 0 0) "../" "./")
+
+ ("c:/Users/Anghelo/Downloads/" (22922 61200 0 0) "hh/" "Game.of.Thrones.S07E03.The.Queens.Justice.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA.part4.rar" "Game.of.Thrones.S07E03.The.Queens.Justice.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA.part3.rar" "Game.of.Thrones.S07E03.The.Queens.Justice.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA.part2.rar" "Game.of.Thrones.S07E03.The.Queens.Justice.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA.part1.rar" "Game.of.Thrones.S07E03.The.Queens.Justice.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA/" "game stuff/" "exercises.zip" "emacs-25.2-x86_64.zip" "emacs-25.2-x86_64/" "desktop.ini" "../" "./")
+
+ ("c:/Users/Anghelo/Downloads/emacs-25.2-x86_64/" (22908 34900 0 0) "var/" "share/" "libexec/" "bin/" "../" "./")
+
+ ("c:/Users/Anghelo/Downloads/emacs-25.2-x86_64/bin/" (22922 61417 0 0) "runemacs.exe" "libXpm-noX4.dll" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-25.2.exe" "ebrowse.exe" "ctags.exe" "addpm.exe" "../" "./")
+
+ ("c:/Users/" (22856 52514 0 0) "Public/" "desktop.ini" "Default User/" "Default/" "Anghelo/" "All Users/" "../" "./")
+
+ ("c:/Users/Anghelo/" (22926 61027 0 0) "Videos/" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "Google Drive/" "Favorites/" "exports/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" ".thumbnails/" "../" "./")
+
+ ("c:/Users/Anghelo/Google Drive/" (22927 47781 0 0) "Recreational Study/" "init.el" "emacs/" "desktop.ini" "CourseWork.zip" "12 Spesh/" "12 Media/" "12 English/" "12 Economics/" "12 Algorithmics/" ".tmp.drivedownload/" "../" "./")
+
+ ("c:/Users/Anghelo/Google Drive/emacs/" (22927 49826 0 0) "trading.org" "school.org" "school.html" "Org-Mode_Reference_Card.pdf" "org mode latex and html.pdf" "commands.org" ".#school.org" "#school.org#" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
