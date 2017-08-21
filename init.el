@@ -27,9 +27,25 @@
  '(custom-safe-themes
    (quote
     ("eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" "3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" "44eec3c3e6e673c0d41b523a67b64c43b6e38f8879a7969f306604dcf908832c" default)))
+ '(org-agenda-custom-commands
+   (quote
+    (("a" "Agenda and all TODOs"
+      ((agenda ""
+	       ((org-agenda-overriding-header "WEEKLY AGENDA")
+		(org-agenda-start-on-weekday nil)
+		(org-deadline-warning-days 0)))
+       (todo "NEXT"
+	     ((org-agenda-overriding-header "NEXT Task")))
+       (todo "TODO"
+	     ((org-agenda-overriding-header "TODO TASKS"))))
+      nil
+      ("agenda.html")))))
+ '(org-agenda-files
+   (quote
+    ("~/Documents/GitHub/cse3521-website-master/themathguy.github.io/")))
  '(package-selected-packages
    (quote
-    (ox-twbs monokai-alt-theme monokai-theme writeroom-mode ace-jump-mode birds-of-paradise-plus-theme ace-window company helm which-key projectile neotree))))
+    (htmlize ox-twbs monokai-alt-theme monokai-theme writeroom-mode ace-jump-mode birds-of-paradise-plus-theme ace-window company helm which-key projectile neotree))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
