@@ -25,7 +25,7 @@
 (require 'paren)
 (set-face-background 'show-paren-match "VioletRed4")
 
-(global-hl-line-mode 1)
+(global-hl-line-mode 0)
 (set-face-foreground 'highlight nil)
 (set-face-background hl-line-face "VioletRed3")
 (set-face-attribute hl-line-face nil :underline nil)
