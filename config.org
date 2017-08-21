@@ -128,6 +128,12 @@ Lets you move point from window to window using Shift and arrow keys.
 #+END_SRC
 
 *** Evil Mode
+
+#+BEGIN_SRC emacs-lisp
+  (require 'evil)
+  (evil-mode 1)
+#+END_SRC
+
 *** Org Mode
 
 #+BEGIN_SRC emacs-lisp

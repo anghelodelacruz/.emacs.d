@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/" . "anghelodelacruz/")
+ ("/" . "Users/")
  ("/Users/anghelodelacruz/Documents/GitHub/cse3521-website-master/" . "themathguy.github.io/")
  ("/Users/anghelodelacruz/Documents/GitHub/" . "cse3521-website-master/")
  ("/Users/anghelodelacruz/Documents/" . "GitHub/")
@@ -15,8 +17,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/anghelodelacruz/.emacs.d/"
  "/Users/anghelodelacruz/Documents/GitHub/cse3521-website-master/themathguy.github.io/"
+ "/Users/anghelodelacruz/.emacs.d/"
  "/Users/anghelodelacruz/Google Drive/12 Economics/"
  "c:/Users/Anghelo/Google Drive/12 Algorithmics/4.6/"
  "c:/Users/Anghelo/Google Drive/12 Algorithmics/"
@@ -24,10 +26,10 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "school.org"
  "config.org"
  "Spesh_ComplexNumbers.org"
  "Spesh_Mechanics.org"
- "school.org"
  "Algo_SAT_TASK_2.org"
  "Algo_4.7.org"
  "Media_Influence.org"
@@ -38,7 +40,9 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/anghelodelacruz/.emacs.d/" (22938 41364 0 0) "newold/" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "config.org~" "config.org" "config.el" "auto-save-list/" ".gitattributes" ".git/" ".DS_Store" "../" "./")
+ ("/Users/anghelodelacruz/.emacs.d/" (22938 41551 0 0) "newold/" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "config.org~" "config.org" "config.el" "auto-save-list/" ".gitattributes" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/" (22562 41687 0 0) "Shared/" "Guest/" "anghelodelacruz/" ".localized" "../" "./")
 
  ("/Users/anghelodelacruz/Documents/GitHub/cse3521-website-master/themathguy.github.io/" (22938 41478 0 0) "Spesh_Sketching.org" "Spesh_Sketching.html" "Spesh_Probability.org" "Spesh_Probability.html" "Spesh_Mechanics.org" "Spesh_ComplexNumbers.html" "Spesh_BoundReference.org" "setup.org" "school.org" "README.md" "old/" "Media_Influence.org" "ltxpng/" "letter.arff" "js/" "iris.arff" "index.html" "images/" "flash/" "favicon.ico" "emacs/" "Econ_Unit_4.tex" "Econ_Unit_4.pdf" "Econ_Unit_4.org" "Econ_Unit_4.html" "Econ_Practice_Questions.org" "Econ_Practice_Questions.html" "Econ_Monetary_Policy.org" "Econ_Budgetary_Policy.org" "Econ_Budgetary_Policy.html" "downloads/" "css/" "commands.org" "calendar.html" "Algo_SAT_TASK_2.tex" "Algo_SAT_TASK_2.pdf" "Algo_SAT_TASK_2.org" "Algo_4.7.org" "Algo_4.6.org" "Algo_4.5.org" "Algo_4.4.org" "Algo_4.3.org" "Algo_4.2.org" "Algo_4.1.org" "Algo_4.1.html" "agenda.html" ".git/" ".DS_Store" "../" "./")
 

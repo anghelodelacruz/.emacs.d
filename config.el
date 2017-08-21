@@ -45,6 +45,9 @@
 ;; you can select the key you prefer to
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
+(require 'evil)
+(evil-mode 1)
+
 (global-set-key "\C-ca" 'org-agenda)
 
 (setq org-todo-keywords
