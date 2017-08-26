@@ -17,8 +17,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/anghelodelacruz/Documents/GitHub/cse3521-website-master/themathguy.github.io/"
  "/Users/anghelodelacruz/.emacs.d/"
+ "/Users/anghelodelacruz/Documents/GitHub/cse3521-website-master/themathguy.github.io/"
  "/Users/anghelodelacruz/Google Drive/12 Economics/"
  "c:/Users/Anghelo/Google Drive/12 Algorithmics/4.6/"
  "c:/Users/Anghelo/Google Drive/12 Algorithmics/"
@@ -26,8 +26,9 @@
 
 ;; ----- ido-work-file-list -----
 (
- "school.org"
  "config.org"
+ "school.org"
+ "Algo_4.1.html"
  "Spesh_ComplexNumbers.org"
  "Spesh_Mechanics.org"
  "Algo_SAT_TASK_2.org"
@@ -35,26 +36,25 @@
  "Media_Influence.org"
  "Spesh_Probability.org"
  "Spesh_BoundReference.org"
- "Spesh_Sketching.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/anghelodelacruz/.emacs.d/" (22938 41551 0 0) "newold/" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "config.org~" "config.org" "config.el" "auto-save-list/" ".gitattributes" ".git/" ".DS_Store" "../" "./")
+ ("/Users/anghelodelacruz/.emacs.d/" (22944 63976 0 0) "newold/" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "config.org~" "config.org" "config.el" "auto-save-list/" ".gitattributes" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/anghelodelacruz/Documents/GitHub/cse3521-website-master/themathguy.github.io/" (22944 65219 0 0) "Spesh_Trigonometry.org" "Spesh_Trigonometry.html" "Spesh_Sketching.org" "Spesh_Sketching.html" "Spesh_Probability.org" "Spesh_Probability.html" "Spesh_Mechanics.org" "Spesh_BoundReference.org" "Spesh_BoundReference.html" "setup.org" "school.org" "README.md" "old/" "Media_Violent_Games.org" "Media_Influence.org" "ltxpng/" "letter.arff" "js/" "iris.arff" "index.html" "images/" "flash/" "favicon.ico" "English.org" "emacs/" "Econ_Unit_4.tex" "Econ_Unit_4.pdf" "Econ_Unit_4.org" "Econ_Unit_4.html" "Econ_Practice_Questions.org" "Econ_Practice_Questions.html" "Econ_Monetary_Policy.org" "Econ_Budgetary_Policy.org" "Econ_Budgetary_Policy.html" "downloads/" "css/" "commands.org" "calendar.html" "Algo_SAT_TASK_2.tex" "Algo_SAT_TASK_2.pdf" "Algo_SAT_TASK_2.org" "Algo_SAT_TASK_2.html" "Algo_4.7.org" "Algo_4.6.org" "Algo_4.5.org" "Algo_4.4.org" "Algo_4.3.org" "Algo_4.2.org" "Algo_4.1.org" "Algo_4.1.html" "agenda.html" ".git/" ".DS_Store" "#Econ_Budgetary_Policy.org#" "../" "./")
+
+ ("/Users/anghelodelacruz/Documents/" (22943 58055 0 0) "Word Bank.mindnode/" "VCE-Algorithmics.epub" "Untitled.png" "TI-Nspire CX/" "Spesh Exam Pack 2  copy/" "Spesh Exam Pack 2 /" "Script.pdf" "Scenes.mindnode/" "project.dot" "notes.pdf" "My Notes/" "Latex/" "Hubba's Style Trades/" "GitHub/" "cycle.png" "Bound Notes.pdf" "asdf/" "Anki/" "90748_2017_Semester 1 Report.pdf" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/anghelodelacruz/" (22940 549 0 0) "thinkorswim/" "texput.log" "PycharmProjects/" "Public/" "Pictures/" "org.ics" "old.emacs.d/" "NOtes" "Music/" "Movies/" "MEGAsync/" "Library/" "Google Drive/" "Downloads/" "Documents/" "Desktop/" "com.add0n.node/" "Applications/" ".Xauthority" ".viminfo" ".vim/" ".Trash/" ".thinkorswim/" ".swp" ".swo" ".swn" ".swm" ".saves/" ".rnd" ".oracle_jre_usage/" ".mono/" ".local/" ".idlerc/" ".gitconfig" ".fontconfig/" ".emacs.d/" ".DS_Store" ".dia-etc/" ".dia/" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
 
  ("/Users/" (22562 41687 0 0) "Shared/" "Guest/" "anghelodelacruz/" ".localized" "../" "./")
-
- ("/Users/anghelodelacruz/Documents/GitHub/cse3521-website-master/themathguy.github.io/" (22938 41478 0 0) "Spesh_Sketching.org" "Spesh_Sketching.html" "Spesh_Probability.org" "Spesh_Probability.html" "Spesh_Mechanics.org" "Spesh_ComplexNumbers.html" "Spesh_BoundReference.org" "setup.org" "school.org" "README.md" "old/" "Media_Influence.org" "ltxpng/" "letter.arff" "js/" "iris.arff" "index.html" "images/" "flash/" "favicon.ico" "emacs/" "Econ_Unit_4.tex" "Econ_Unit_4.pdf" "Econ_Unit_4.org" "Econ_Unit_4.html" "Econ_Practice_Questions.org" "Econ_Practice_Questions.html" "Econ_Monetary_Policy.org" "Econ_Budgetary_Policy.org" "Econ_Budgetary_Policy.html" "downloads/" "css/" "commands.org" "calendar.html" "Algo_SAT_TASK_2.tex" "Algo_SAT_TASK_2.pdf" "Algo_SAT_TASK_2.org" "Algo_4.7.org" "Algo_4.6.org" "Algo_4.5.org" "Algo_4.4.org" "Algo_4.3.org" "Algo_4.2.org" "Algo_4.1.org" "Algo_4.1.html" "agenda.html" ".git/" ".DS_Store" "../" "./")
 
  ("/Users/anghelodelacruz/Google Drive/12 Economics/" (22931 44130 0 0) "Receipts.jpg" "notes.pdf" "Expenditure.jpg" "econ.org~" "econ.org" "econ.html~" "econ.html" "2017-07/" ".DS_Store" "../" "./")
 
  ("/Users/anghelodelacruz/Documents/GitHub/cse3521-website-master/" (22935 39657 0 0) "themathguy.github.io/" ".DS_Store" "../" "./")
 
  ("/Users/anghelodelacruz/Documents/GitHub/" (22935 38865 0 0) "School/" "cse3521-website-master/" ".DS_Store" "../" "./")
-
- ("/Users/anghelodelacruz/Documents/" (22932 8018 0 0) "Word Bank.mindnode/" "VCE-Algorithmics.epub" "Untitled.png" "TI-Nspire CX/" "Spesh Exam Pack 2  copy/" "Spesh Exam Pack 2 /" "Script.pdf" "Scenes.mindnode/" "project.dot" "notes.pdf" "My Notes/" "Latex/" "Hubba's Style Trades/" "GitHub/" "cycle.png" "Bound Notes.pdf" "asdf/" "Anki/" "90748_2017_Semester 1 Report.pdf" ".localized" ".DS_Store" "../" "./")
-
- ("/Users/anghelodelacruz/" (22936 4810 0 0) "thinkorswim/" "texput.log" "PycharmProjects/" "Public/" "Pictures/" "org.ics" "old.emacs.d/" "NOtes" "Music/" "Movies/" "MEGAsync/" "Library/" "Google Drive/" "Downloads/" "Documents/" "Desktop/" "com.add0n.node/" "Applications/" ".viminfo" ".vim/" ".Trash/" ".thinkorswim/" ".swp" ".swo" ".swn" ".swm" ".saves/" ".oracle_jre_usage/" ".idlerc/" ".gitconfig" ".emacs.d/" ".DS_Store" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
 
  ("/Users/anghelodelacruz/Google Drive/" (22930 43700 0 0) "Stuff/" "Recreational Study/" "init.el" "Icon
 " "emacs/" "CourseWork.zip" "12 Spesh/" "12 Media/" "12 English/" "12 Economics/" "12 Algorithmics/" ".tmp.drivedownload/" ".DS_Store" "../" "./")
