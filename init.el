@@ -45,7 +45,7 @@
     ("~/Documents/GitHub/cse3521-website-master/themathguy.github.io/")))
  '(package-selected-packages
    (quote
-    (evil htmlize ox-twbs monokai-alt-theme monokai-theme writeroom-mode ace-jump-mode birds-of-paradise-plus-theme ace-window company helm which-key projectile neotree))))
+    (tabbar zone-rainbow zone-matrix evil htmlize ox-twbs monokai-alt-theme monokai-theme writeroom-mode ace-jump-mode birds-of-paradise-plus-theme ace-window company helm which-key projectile neotree))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

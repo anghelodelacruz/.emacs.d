@@ -32,6 +32,16 @@
 
 (winner-mode t)
 
+(defun zone-choose (pgm)
+    "Choose a PGM to run for `zone'."
+    (interactive
+     (list
+      (completing-read
+       "Program: "
+       (mapcar 'symbol-name zone-programs))))
+    (let ((zone-programs (list (intern pgm))))
+      (zone)))
+
 (windmove-default-keybindings)
 
 (global-set-key (kbd "M-p") 'ace-window)
