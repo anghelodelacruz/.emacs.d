@@ -1,75 +1,57 @@
-
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 ;; (menu-bar-mode -1)
-
-(set-default 'cursor-type 'hbar)
-
-(setq org-src-fontify-natively t)
 
 (setq create-lcokfiles nil)
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
 
-(org-babel-do-load-languages
-   'org-babel-load-languages
-      '((calc . t)))
+(use-package try
+	:ensure t)
 
-(ido-mode)
+(use-package which-key
+	:ensure t 
+	:config
+	(which-key-mode))
 
-(column-number-mode)
-
-(show-paren-mode)
-(setq show-paren-delay 0)
-(require 'paren)
-(set-face-background 'show-paren-match "VioletRed4")
-
-(global-hl-line-mode 0)
-(set-face-foreground 'highlight nil)
-(set-face-background hl-line-face "VioletRed3")
-(set-face-attribute hl-line-face nil :underline nil)
-
-(winner-mode t)
-
-(defun zone-choose (pgm)
-    "Choose a PGM to run for `zone'."
-    (interactive
-     (list
-      (completing-read
-       "Program: "
-       (mapcar 'symbol-name zone-programs))))
-    (let ((zone-programs (list (intern pgm))))
-      (zone)))
-
-(windmove-default-keybindings)
-
-(global-set-key (kbd "M-p") 'ace-window)
-
-(add-to-list 'load-path "/full/path/where/ace-jump-mode.el/in/")
-(autoload
-  'ace-jump-mode
-  "ace-jump-mode"
-  "Emacs quick move minor mode"
-  t)
-;; you can select the key you prefer to
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-
-(require 'evil)
-(evil-mode 1)
+(use-package dashboard
+	:config
+	(dashboard-setup-startup-hook))
 
 (global-set-key "\C-ca" 'org-agenda)
-
+(setq org-agenda-files (list "~/Documents/GitHub/cse3521-website-master/themathguy.github.io/"))
 (setq org-todo-keywords
        '((sequence "TODO" "NEXT" "WAITING" "INACTIVE" "|" "DONE" "CANCELLED")))
 
-(add-to-list 'load-path "/some/path/neotree")
-(require 'neotree)
-(global-set-key [f8] 'neotree-toggle)
-(setq neo-theme (if (display-graphic-p) 'ascii 'arrow))
-(setq-default neo-show-hidden-files t)
+(setq org-src-fontify-natively t)
 
-(package-initialize)
+(use-package evil
+	:ensure t
+	:config
+	(evil-mode))
+
+(use-package helm
+	:ensure t)
+(global-set-key (kbd "M-x") #'helm-M-x)
+(global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
+(global-set-key (kbd "C-x C-f") #'helm-find-files)
+(helm-autoresize-mode t)
+
+(use-package solaire-mode
+	:ensure t
+	:config
+	(solaire-mode))
+;; brighten buffers (that represent real files)
+(add-hook 'after-change-major-mode-hook #'turn-on-solaire-mode)
+;; To enable solaire-mode unconditionally for certain modes:
+(add-hook 'ediff-prepare-buffer-hook #'solaire-mode)
+
+;; ...if you use auto-revert-mode:
+(add-hook 'after-revert-hook #'turn-on-solaire-mode)
+
+;; highlight the minibuffer when it is activated:
+(add-hook 'minibuffer-setup-hook #'solaire-mode-in-minibuffer)
 
 (set-frame-parameter (selected-frame) 'alpha 80)
 
@@ -78,6 +60,9 @@
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
 
-(load-theme 'doom-molokai t)
-
+(use-package doom-themes
+	:ensure t)
+(load-theme 'doom-one t)
+(doom-themes-org-config)
+(doom-themes-visual-bell-config)
 (setq frame-title-format "emacs")

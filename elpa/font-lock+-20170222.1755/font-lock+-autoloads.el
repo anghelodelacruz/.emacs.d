@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("font-lock+.el") (22950 38795 0 0))
+;;;### (autoloads nil nil ("font-lock+.el") (22954 1577 0 0))
 
 ;;;***
 
