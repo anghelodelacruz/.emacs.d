@@ -15,9 +15,10 @@
 		(org-deadline-warning-days 0)))
        (alltodo "" nil))
       nil))))
+ '(org-agenda-files (quote ("~/Documents/GitHub/themathguy.github.io/")))
  '(package-selected-packages
    (quote
-    (solaire-mode helm evil-org dashboard which-key try use-package))))
+    (company helm-projectile solaire-mode helm evil-org dashboard which-key try use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

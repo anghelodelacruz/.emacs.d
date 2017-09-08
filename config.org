@@ -52,7 +52,7 @@
 **** org-agenda
 #+BEGIN_SRC emacs-lisp
 (global-set-key "\C-ca" 'org-agenda)
-(setq org-agenda-files (list "~/Documents/GitHub/cse3521-website-master/themathguy.github.io/"))
+(setq org-agenda-files (list "~/Documents/GitHub/themathguy.github.io/"))
 (setq org-todo-keywords
        '((sequence "TODO" "NEXT" "WAITING" "INACTIVE" "|" "DONE" "CANCELLED")))
 #+END_SRC
@@ -69,6 +69,16 @@
 	(evil-mode))
 #+END_SRC
 
+*** company
+
+#+BEGIN_SRC emacs-lisp
+(use-package company
+	:ensure t
+	:config
+	(company-mode))
+(add-hook 'after-init-hook 'global-company-mode)	
+(setq company-idle-delay t)
+#+END_SRC
 
 *** helm
 
@@ -79,6 +89,24 @@
 (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 (helm-autoresize-mode t)
+#+END_SRC
+
+*** projectile
+
+#+BEGIN_SRC emacs-lisp
+(use-package projectile
+	:ensure t
+	:config
+	(projectile-mode))
+#+END_SRC
+
+*** helm-projectile
+
+#+BEGIN_SRC emacs-lisp
+(use-package helm-projectile
+	:ensure t
+	:config
+	(helm-projectile-on))
 #+END_SRC
 
 *** solaire
@@ -101,7 +129,34 @@
 
 #+END_SRC
 
+
+
+
 ** THEME
+
+*** Window Size
+
+#+BEGIN_SRC emacs-lisp
+(defun set-frame-size-according-to-resolution ()
+  (interactive)
+  (if window-system
+  (progn
+    ;; use 120 char wide window for largeish displays
+    ;; and smaller 80 column windows for smaller displays
+    ;; pick whatever numbers make sense for you
+    (if (> (x-display-pixel-width) 1280)
+           (add-to-list 'default-frame-alist (cons 'width 120))
+           (add-to-list 'default-frame-alist (cons 'width 80)))
+    ;; for the height, subtract a couple hundred pixels
+    ;; from the screen height (for panels, menubars and
+    ;; whatnot), then divide by the height of a char to
+    ;; get the height we want
+    (add-to-list 'default-frame-alist 
+         (cons 'height (/ (- (x-display-pixel-height) 0)
+                             (frame-char-height)))))))
+
+(set-frame-size-according-to-resolution)
+#+END_SRC
 
 *** Transparency
 
@@ -126,5 +181,6 @@
 (doom-themes-visual-bell-config)
 (setq frame-title-format "emacs")
 #+END_SRC
+
 
 

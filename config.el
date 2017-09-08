@@ -20,7 +20,7 @@
 	(dashboard-setup-startup-hook))
 
 (global-set-key "\C-ca" 'org-agenda)
-(setq org-agenda-files (list "~/Documents/GitHub/cse3521-website-master/themathguy.github.io/"))
+(setq org-agenda-files (list "~/Documents/GitHub/themathguy.github.io/"))
 (setq org-todo-keywords
        '((sequence "TODO" "NEXT" "WAITING" "INACTIVE" "|" "DONE" "CANCELLED")))
 
@@ -31,12 +31,29 @@
 	:config
 	(evil-mode))
 
+(use-package company
+	:ensure t
+	:config
+	(company-mode))
+(add-hook 'after-init-hook 'global-company-mode)	
+(setq company-idle-delay t)
+
 (use-package helm
 	:ensure t)
 (global-set-key (kbd "M-x") #'helm-M-x)
 (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 (helm-autoresize-mode t)
+
+(use-package projectile
+	:ensure t
+	:config
+	(projectile-mode))
+
+(use-package helm-projectile
+	:ensure t
+	:config
+	(helm-projectile-on))
 
 (use-package solaire-mode
 	:ensure t
@@ -52,6 +69,26 @@
 
 ;; highlight the minibuffer when it is activated:
 (add-hook 'minibuffer-setup-hook #'solaire-mode-in-minibuffer)
+
+(defun set-frame-size-according-to-resolution ()
+  (interactive)
+  (if window-system
+  (progn
+    ;; use 120 char wide window for largeish displays
+    ;; and smaller 80 column windows for smaller displays
+    ;; pick whatever numbers make sense for you
+    (if (> (x-display-pixel-width) 1280)
+           (add-to-list 'default-frame-alist (cons 'width 120))
+           (add-to-list 'default-frame-alist (cons 'width 80)))
+    ;; for the height, subtract a couple hundred pixels
+    ;; from the screen height (for panels, menubars and
+    ;; whatnot), then divide by the height of a char to
+    ;; get the height we want
+    (add-to-list 'default-frame-alist 
+         (cons 'height (/ (- (x-display-pixel-height) 0)
+                             (frame-char-height)))))))
+
+(set-frame-size-according-to-resolution)
 
 (set-frame-parameter (selected-frame) 'alpha 80)
 

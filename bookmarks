@@ -3,7 +3,7 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("Planner"
- (filename . "~/Documents/GitHub/cse3521-website-master/themathguy.github.io/life.org")
+ (filename . "~/Documents/GitHub/themathguy.github.io/life.org")
  (front-context-string . "* Timetable\n  \n#")
  (rear-context-string . "ITLE: PLANNER\n\n\n")
  (position . 20))

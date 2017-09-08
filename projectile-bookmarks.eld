@@ -1,0 +1,1 @@
+("~/Documents/GitHub/themathguy.github.io/" "~/.emacs.d/")
